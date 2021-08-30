@@ -34,7 +34,7 @@ app.use(baseurl, router);
 
 if (process.env.NODE_ENV === "production") {
   // api home
-  app.get("/home", function (request, response) {
+  app.get("/api", function (request, response) {
     response.sendFile(path.resolve(__dirname, "public", "index.html"));
   });
 
