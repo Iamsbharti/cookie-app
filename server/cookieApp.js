@@ -33,15 +33,17 @@ let baseurl = process.env.API_VERSION;
 app.use(baseurl, router);
 
 if (process.env.NODE_ENV === "production") {
+  // api home
+  app.get("/home", function (request, response) {
+    response.sendFile(path.resolve(__dirname, "public", "index.html"));
+  });
+
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, "../client/build")));
 
   // All remaining requests return the React app, so it can handle routing.
   app.get("*", function (request, response) {
     response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
-  });
-  app.get("/home", function (request, response) {
-    response.sendFile(path.resolve(__dirname, "public", "index.html"));
   });
 }
 
