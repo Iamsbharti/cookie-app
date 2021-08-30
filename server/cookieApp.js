@@ -40,8 +40,10 @@ if (process.env.NODE_ENV === "production") {
   app.get("*", function (request, response) {
     response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
   });
+  app.get("/home", function (request, response) {
+    response.sendFile(path.resolve(__dirname, "public", "index.html"));
+  });
 }
-app.use(express.static(path.resolve(__dirname, "public")));
 
 // error handler
 app.use(notfound);
