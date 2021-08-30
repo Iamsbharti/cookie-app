@@ -28,6 +28,10 @@ app.use(function (req, res, next) {
   next();
 });
 
+// api route
+let baseurl = process.env.API_VERSION;
+app.use(baseurl, router);
+
 if (process.env.NODE_ENV === "production") {
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, "../client/build")));
@@ -38,10 +42,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 app.use(express.static(path.resolve(__dirname, "public")));
-
-// api route
-let baseurl = process.env.API_VERSION;
-app.use(baseurl, router);
 
 // error handler
 app.use(notfound);
