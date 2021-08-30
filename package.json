@@ -1,0 +1,69 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "cookies e comm server",
+  "main": "cookieApp.js",
+  "scripts": {
+    "start-api": "nodemon server/cookieApp.js",
+    "dev": "react-scripts start",
+    "start": "npm run start-api",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iamsbharti/cookie-e-comm.git"
+  },
+  "keywords": [
+    "server",
+    "node",
+    "mongodb",
+    "ecomm"
+  ],
+  "author": "Saurabh Bharti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iamsbharti/cookie-e-comm/issues"
+  },
+  "homepage": "https://github.com/Iamsbharti/cookie-e-comm#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2",
+    "@hapi/joi": "^17.1.1",
+    "apidoc": "^0.24.0",
+    "bcrypt": "^5.0.0",
+    "blob-stream": "^0.1.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "country-code-lookup": "0.0.17",
+    "country-js": "0.0.9",
+    "crypto": "^1.0.1",
+    "dateformat": "^3.0.3",
+    "form-data": "^3.0.0",
+    "generate-password": "^1.5.1",
+    "gridfs-stream": "^1.1.1",
+    "helmet": "^4.0.0",
+    "jquery": "^3.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailgen": "^2.0.14",
+    "method-override": "^3.0.0",
+    "mocha": "^8.4.0",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0",
+    "nodemailer": "^6.4.10",
+    "nodemon": "^2.0.4",
+    "pdfkit": "^0.12.1",
+    "shortid": "^2.2.15",
+    "socket.io": "^2.3.0",
+    "tslib": "^1.10.0",
+    "winston": "^3.3.3",
+    "zone.js": "~0.10.2"
+  }
+}

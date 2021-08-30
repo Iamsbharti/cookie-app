@@ -1,0 +1,22 @@
+2021-08-30 14:32:46 [32minfo[39m: Cookie Server launched at::4242
+2021-08-30 14:32:46 [31merror[39m: Error Connencting Cookie-DB: option usecreateindex is not supported
+2021-08-30 14:33:07 [32minfo[39m: Cookie Server launched at::4242
+2021-08-30 14:33:08 [32minfo[39m: Cookie - DB CONNECTION SUCCESS
+2021-08-30 14:33:14 [32minfo[39m: Cookie Server launched at::4242
+2021-08-30 14:33:15 [32minfo[39m: Cookie - DB CONNECTION SUCCESS
+2021-08-30 14:33:20 [32minfo[39m: Cookie Server launched at::4242
+2021-08-30 14:33:21 [32minfo[39m: Cookie - DB CONNECTION SUCCESS
+2021-08-30 14:34:34 [32minfo[39m: GET requested by - ::1 for path -/api/v1/cookie/health using http
+2021-08-30 14:34:57 [32minfo[39m: GET requested by - ::1 for path -/api/v1/cookie/health using http
+2021-08-30 14:35:19 [32minfo[39m: GET requested by - ::1 for path -/api/v1/cookie/health using http
+2021-08-30 14:35:37 [32minfo[39m: Cookie Server launched at::4242
+2021-08-30 14:35:40 [32minfo[39m: Cookie - DB CONNECTION SUCCESS
+2021-08-30 14:35:45 [32minfo[39m: GET requested by - ::1 for path -/api/v1/cookie/health using http
+2021-08-30 14:40:19 [32minfo[39m: GET requested by - ::1 for path -/ using http
+2021-08-30 14:40:21 [32minfo[39m: GET requested by - ::1 for path -/favicon.ico using http
+2021-08-30 14:47:19 [32minfo[39m: GET requested by - ::1 for path -/ using http
+2021-08-30 14:47:29 [32minfo[39m: GET requested by - ::1 for path -/ using http
+2021-08-30 14:47:29 [32minfo[39m: GET requested by - ::1 for path -/favicon.ico using http
+2021-08-30 15:52:02 [32minfo[39m: Cookie - DB CONNECTION SUCCESS
+2021-08-30 16:22:55 [32minfo[39m: Cookie Server launched at::4242
+2021-08-30 16:22:57 [32minfo[39m: Cookie - DB CONNECTION SUCCESS
